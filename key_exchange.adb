@@ -1,5 +1,7 @@
 package body Key_Exchange is
 
+   use type Interfaces.Integer_64;
+
    -- Internal type for calculations that double the bit-width to prevent overflow
    type Double_Value is new Interfaces.Unsigned_64;
 

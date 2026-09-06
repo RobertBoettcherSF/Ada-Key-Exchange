@@ -27,9 +27,9 @@ begin
    -- TEST 2 - Core: Modular Multiplication
    Put_Line ("TEST 2 - Core: Modular Multiplication");
    Check ("2.1 Normal multiplication", Modular_Multiply (3, 4, 10) = 2);
-   -- 10^6 * 10^6 mod 1000000007 = 582344007. Safely exercises Double_Value internals.
-   Check ("2.2 Large mult without overflow", Modular_Multiply (1000000, 1000000, 1000000007) = 582344007);
-   Check ("2.3 Zero property", Modular_Multiply (99, 0, 10) = 0);
+   -- 10^6 * 10^6 mod 1000000007 = 999993007. Safely exercises Double_Value internals.
+   Check ("2.2 Large mult without overflow", Modular_Multiply (1000000, 1000000, 1000000007) = 999993007);
+   Check ("2.3 Zero property", Modular_Multiply (9, 0, 10) = 0);
 
    -- TEST 3 - Core: Modular Exponentiation
    Put_Line ("TEST 3 - Core: Modular Exponentiation");

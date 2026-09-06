@@ -152,7 +152,7 @@ begin
       EA : constant Key_Value := 7;
       DA, DB : Key_Value;
       EB : constant Key_Value := 11;
-      M : constant Key_Value := 25;
+      M : constant Key_Value := 15;
       C1, C2, C3, M_Out : Key_Value;
    begin
       Shamir_Generate_Keys (P, EA, DA);
